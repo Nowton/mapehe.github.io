@@ -9,4 +9,19 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
+  <script>
+  var gaProperty = 'UA-103669231-1';
+
+  var disableStr = 'ga-disable-' + gaProperty;
+  if (document.cookie.indexOf(disableStr + '=true') > -1) {
+    window[disableStr] = true;
+  }
+
+  function gaOptout() {
+    document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+    window[disableStr] = true;
+    alert("Your data is no longer recorded.");
+  }
+  </script>
+
 </article>

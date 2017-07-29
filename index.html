@@ -6,6 +6,7 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
 
+      <p style="margin-bottom:-0.5cm;font-family:'Heebo', sans-serif;">{{ post.date | date: "%B %e, %Y" }}</p>
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
