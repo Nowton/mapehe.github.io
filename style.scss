@@ -18,8 +18,7 @@ html {
 }
 
 body {
-	background-image: url("/images/bck.png");
-  background-repeat: repeat;
+  background-color: $gray;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
